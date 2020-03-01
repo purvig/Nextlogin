@@ -35,10 +35,15 @@ namespace Nextlogin.Page
             Username.SendKeys("pv_gangwal@yahoo.co.uk");
             Password.SendKeys("Tia1156v");
             Signin.Click();
-            Task.Delay(5000).Wait();
-            Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
-            ss.SaveAsFile(@"C:\Users\vgangwal\source\repos\Nextlogin\Nextlogin\SC.aa.Jpeg", ScreenshotImageFormat.Jpeg);
-            Task.Delay(6000).Wait();
+            Task.Delay(3000).Wait();
+            //Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+            //ss.SaveAsFile(@"C: \Users\vgangwal\source\repos\Nextlogin\Nextlogin\SC.aa.Jpeg", ScreenshotImageFormat.Jpeg);
+            //ask.Delay(3000).Wait();
+            Screenshot pp = ((ITakesScreenshot)driver).GetScreenshot();
+            pp.SaveAsFile(@"C:\Users\vgangwal\source\repos\Nextlogin\Nextlogin\Page\DD.aa.Jpeg", ScreenshotImageFormat.Jpeg);
+            Task.Delay(3000).Wait();
+
+
         }
         [FindsBy(How = How.CssSelector, Using = "#EmailOrAccountNumber")]
         public IWebElement Username;

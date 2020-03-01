@@ -19,6 +19,7 @@ namespace Nextlogin.Base
         {
             Driver = new ChromeDriver();
             Driver.Manage().Window.Maximize();
+            Driver.Manage().Cookies.DeleteAllCookies();
 ;        }
 
         [AfterScenario]
